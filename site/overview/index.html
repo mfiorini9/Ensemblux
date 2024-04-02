@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://neurobioinfo.github.io/overview/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Overview - Ensemblux</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "overview.md";
+        var mkdocs_page_url = "/overview/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Ensemblux
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">The Ensemblux framework</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#step-1-accuracy-weighted-probabilistic-ensemble">Step 1: Accuracy-weighted probabilistic ensemble</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-2-graph-based-doublet-detection">Step 2: Graph-based doublet detection</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-3-ensemble-independent-doublet-detection">Step 3: Ensemble-independent doublet detection</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">The Ensemblux Pipeline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../overview_pipeline/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Step0/">Step 1: Set up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Step1/">Step 2: Preparation of input files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Step2/">Step 3: Genetic demultiplexing by constituent tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Step3/">Step 4: Application of Ensemblux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../config/">Job configurations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reference/">Execution parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../outputs/">Outputs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../midbrain_download/">Downloading data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Dataset1/">Enemblux with prior genotype information</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DEG/">Enemblux without prior genotype information</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../LICENSE/">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contributing/">Help and Feedback</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Acknowledgement/">Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Ensemblux</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>The Ensemblux framework &raquo;</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ensemblux-framework-overview">Ensemblux framework overview</h1>
+<p>The Ensemblux workflow begins by demultiplexing pooled cells with each of its constituent tools</p>
+<p><strong>Figure</strong>
+Figure 1. </p>
+<p>Upon demultiplexing pools with each individual constituent genetic demultiplexing tool, Ensemblux processes the outputs in a three-step pipeline:</p>
+<ul>
+<li><a href="#step-1-accuracy-weighted-probabilistic-ensemble">Step 1: Accuracy-weighted probabilistic-weighted ensemble</a></li>
+<li><a href="#step-2-graph-based-doublet-detection">Step 2: Graph-based doublet detection</a></li>
+<li><a href="#step-3-ensemble-independent-doublet-detection">Step 3: Ensemble-independent doublet detection</a></li>
+</ul>
+<p><strong>figure</strong>
+Figure 2. </p>
+<p>For demonstration purposes throughout this section, we leveraged simulated pools with known ground-truth sample labels that were generated with 80 independetly-sequenced induced pluripotent stem cell (iPSC) lines from individuals with Parkinson's disease and neurologically healthy controls that were differentiated towards a dopaminergic cell fate as part of the Foundational Data initiative for Parkinson's disease (FOUNDIN-PD; <strong>CITE</strong>)</p>
+<hr />
+<h3 id="step-1-accuracy-weighted-probabilistic-ensemble">Step 1: Accuracy-weighted probabilistic ensemble</h3>
+<p>The accuracy-weighted probabilistic ensemble component of the Ensemblux framework utilizes an unsupervised weighting model to identify the most probable sample label for each cell. Ensemblux weighs each constituent tool’s assignment probability distribution by its estimated balanced accuracy for the dataset in a framework that was largely inspired by the work of Large et al. (<strong>CITE</strong>). The weighted assignment probabilities across all four constituent tools are then used to inform the most probable sample label for each cell.</p>
+<p><strong>FIGURE</strong></p>
+<p>To estimate the balanced accuracy of a particular constituent tool (e.g. Demuxalot) for real-word datasets lacking ground-truth labels, Ensemblux leverages the cells with a consensus assignment across the three remaining tools (e.g. Demuxlet, Souporcell, and Vireo-GT) as a proxy for ground-truth. To validate this approach for estimating the balanced accuracy of the constituent demultiplexing tools for the particular datset, we computed the Adjusted Rand Index between the sample labels after weighing the assignment probabilities by the estimated balanced accuracy and the true balanced accuracy across simulated pools ranging in size from four to 80 samples. </p>
+<p><strong>Figure</strong></p>
+<hr />
+<h3 id="step-2-graph-based-doublet-detection">Step 2: Graph-based doublet detection</h3>
+<p>The graph-based doublet detection component of the Ensemblux framework was implemented to identify doublets that are incorrectly labeled as singlets by the accuracy-weighted probablistic ensemble component (Step 1). To demonstrate Step 2 of the Ensemblux framework we leveraged a simulated pool comprising 24 pooled samples, 17,384 cells, and a 15% doublet rate.</p>
+<p><strong>FIGURE</strong> diagrame</p>
+<p>The graph-based doublet detection component beging by leveraging select variables returned from each constituent tool:</p>
+<ol>
+<li>Demuxalot: doublet probability;</li>
+<li>Demuxlet/Freemuxlet: singlet log likelihood – doublet log likelihood;</li>
+<li>Demuxlet/Freemuxlet: number of single nucleotide polymorphisms (SNP) per cell;</li>
+<li>Demuxlet/Freemuxlet: number of reads per cell;</li>
+<li>Souporcell: doublet log probability;</li>
+<li>Vireo: doublet probability;</li>
+<li>Vireo: doublet log likelihood ratio </li>
+</ol>
+<p><strong>Figure</strong></p>
+<p>Using these variables, Ensemblux then screens each pooled cell to identify the <em>n</em> most confident doublets (nCD) in the pool and performs a principal component analysis (PCA).</p>
+<p><strong>FIGURE: Ground truth PCA, confident doublet PCA</strong></p>
+<p>The PCA embedding is then converted into a Euclidean distance matrix and each cell is assigned a percentile rank based on their distance to each confident doublet. Ensemblux identifies the cells that exceed the designated percentile threshold (pT) for each confident doublet and computes the number of times each cell appears amongst the nearest neighbours (fNN) of a confident doublet; an fNN equal to nCD indicates that a cell was amongst the top nearest neighbours for each confident doublet. Ensemblux then plots the distribution of fNN values as a density plot. </p>
+<p><strong>fnn distribution plot</strong></p>
+<p>For real-world pools without ground-truth sample labels, Ensemblux performs an automated parameter sweep at varying combinations of nCD and pT values to optimize the graph-based doublet detection parameters. By default, nCD values range from 50 to 300, in increments of 50, while pT values depend on the expected doublet rate (exDR) and range from 1-  (exDR/6) to 1-exDR, in intervals of  (1-exDR)/6. For instance, if the expected doublet rate is 15%, the pT values tested in the parameter sweep will be 0.975, 0.950, 0.925, 0.900, 0.875, and 0.850, by default. </p>
+<p>The density of fNN values for each combination of nCD and pT parameters are plotted and Pearson’s measure of kurtosis (k), or the tailedness of the distribution, is used to predict which combination of pT and nCD values optimizes the identification of true doublets while minimizing the rate of incorrectly labelled true singlets as doublets. Specifically, we screen for combinations of nCD and pT values that result in fNN distributions with high k as they signify that outlier cells — those with the highest fNN values — were identified as the nearest neighbours of many confident doublets. Thus, Ensemblux first identifies the pT that returns the highest k, on average, across nCD values.</p>
+<p><strong>FIGURE</strong></p>
+<p>Upon identifying the optimal pT value, Ensemblux plots the k corresponding to optimal pT across all nCD values tested in the parameter sweep. Importantly, the shape of the curve produced by plotting k across nCD values is dependent on the degree of separation between doublets and singlets in PCA space.  If singlets and doublets segregate strongly in PCA space, k will show a linear curve across nCD values; in this case, the choice of optimal nCD is inconsequential. In contrast, k will vary according to nCD for most pools due to singlets and doublets showing moderate segregation in PCA space; in this case, Ensemblux employs a two-step model for identifying optimal nCD. First, Ensemblux determines whether a point of inflection is identifiable due to a concave curve; in this case, Ensemblux identifies optimal nCD as the nCD value corresponding to the point of inflection on the curve, which, using pools with known ground-truth labels, we observed to represent the point of a negative return on doublet detection as an exceedingly high rate of true singlets are falsely identified as doublets as k decreases. Second, if an inflection point is still unidentifiable, Ensemblux identifies optimal nCD as the nCD value corresponding to the highest k. </p>
+<p><strong>Figure</strong></p>
+<p>The cells that are identified as doublets using optimal pT and optimal nCD are then labelled as doublets by Ensemblux.</p>
+<p><strong>PCA FIGURES</strong></p>
+<hr />
+<h3 id="step-3-ensemble-independent-doublet-detection">Step 3: Ensemble-independent doublet detection</h3>
+<p>The ensemble-independent doublet detection component of the Ensemblux framework was implemented to further improve Ensemblux's ability to identify doublets. Benchmarking on simulated pools with known ground-truth sample labels revealed that certain genetic demultiplexing tools, namely Demuxalot and Vireo, showed high doublet detection specificity.</p>
+<p><strong>FIGURE</strong></p>
+<p>However, Steps 1 and 2 of the Ensemblux workflow failed to correctly label a subset of doublet calls by these tools. To mitigate this issue and maximize the rate of doublet identification, Ensemblux labels the cells that are identified as doublets by Vireo or Demuxalot as doublets, by default; however, users can nominate different tools for the ensemble-independent doublet detection component depending on the desired doublet detection stringency. </p>
+<p><strong>FIGURE</strong></p>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../overview_pipeline/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../overview_pipeline/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

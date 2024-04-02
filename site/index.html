@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://neurobioinfo.github.io/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Ensemblux</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Ensemblux
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">The Ensemblux framework</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="overview/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">The Ensemblux Pipeline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="overview_pipeline/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Step0/">Step 1: Set up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Step1/">Step 2: Preparation of input files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Step2/">Step 3: Genetic demultiplexing by constituent tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Step3/">Step 4: Application of Ensemblux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="config/">Job configurations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="reference/">Execution parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="outputs/">Outputs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="midbrain_download/">Downloading data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Dataset1/">Enemblux with prior genotype information</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="DEG/">Enemblux without prior genotype information</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="LICENSE/">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="contributing/">Help and Feedback</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Acknowledgement/">Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Ensemblux</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="welcome-to-the-ensemblux-documentation">Welcome to the Ensemblux documentation!</h1>
+<p>Ensemblux is an accuracy-weighted, probabilistic ensemble framework for genetic demultiplexing of population-scale single-cell RNA seqeuncing (scRNAseq) sample pooling. Ensemblux was developed in response to limitations of the individual genetic demultiplexing tools that impede investigators from capitalizing on the full potential of their dataset: </p>
+<ol>
+<li>Accurate demultiplexing of ceratin subsets of pooled cells can only be achieved by single tools</li>
+<li>Correctly classified cells are unecessarily discarded from downstream analyses due to insufficient assignment probabilities</li>
+<li>Demultiplexing accuracy decreases as the number of pooled samples increases</li>
+</ol>
+<p>By addressing the above limitations, we demonstrated that Ensemblux achieves higher demultiplexing accuracy across pools ranging in size from four to 80 multiplexed samples compared to the individual tools, limits the introduction of technical artifacts into scRNAseq analysis, and retains a high proportion of pooled cells for downstream analyses. The ensemble method capitalizes on the added confidence of combining distinct statistical frameworks for genetic demultiplexing, but the modular algorithm can adapt to the overall performance of its constituent tools on the respective dataset, thus making it resilient against a poorly performing constituent tool.</p>
+<p>Ensemblux can be used to demultiplex pools with and without prior genotype information. When demultiplexing <strong>with</strong> prior genotype information, Ensemblux leverages the sample assignments of four individual, constituent genetic demultiplexing tools:</p>
+<ol>
+<li>Demuxalot (<strong>citation</strong>)</li>
+<li>Demuxlet (<strong>citation</strong>)</li>
+<li>Souporcell (<strong>citation</strong>)</li>
+<li>Vireo-GT (<strong>citation</strong>)</li>
+</ol>
+<p>When demultiplexing <strong>without</strong> prior genotype information, Ensemblux leverages the sample assignments of four individual, constituent genetic demultiplexing tools:</p>
+<ol>
+<li>Demuxalot (<strong>citation</strong>)</li>
+<li>Freemuxlet (<strong>citation</strong>)</li>
+<li>Souporcell (<strong>citation</strong>)</li>
+<li>Vireo (<strong>citation</strong>)</li>
+</ol>
+<p>Upon demultiplexing pools with each of the four constituent genetic demultiplexing tools, Ensemblux processes the output files in a three-step pipeline that was designed to obtain the most probable sample label for each individual cell:</p>
+<p><strong>Step 1</strong>: Probabilistic-weighted ensemble <br />
+<strong>Step 2</strong>: Graph-based doublet detection <br />
+<strong>Step 3</strong>: Ensemble-independent doublet detection <br /></p>
+<p align="center">
+ <img src="https://github.com/fiorini9/Ensemblux/assets/110110777/12f421be-d6c6-4897-9a49-8bf218389fbd" width="550" height="100">
+ </p>
+
+<p>As output, Ensemblux returns its own cell-specific sample labels and corresponding assignment probabilities and singlet confidence score, as well as the sample labels and corresponding assignment probabilities for each of its constituents.</p>
+<p>To facilitate the application of Ensemblux, we provide a pipeline that demultiplexes pooled cells by each of the individual constituent genetic demultiplexing tools and processes the outputs with the Ensemblux algorithm. In this documentation, we outline each step of the Ensemblux pipeline, define best practices, and provide a tutorial with pubicly available datasets. </p>
+<p>For a comprehensive descripttion of Ensemblux, ground-truth benchmarking, and application to real-world datasets, see our pre-print manuscript: <strong>Pre-print</strong></p>
+<hr />
+<h2 id="contents">Contents</h2>
+<ul>
+<li>The Ensemblux Framework:<ul>
+<li><a href="overview/">Overview</a></li>
+</ul>
+</li>
+<li>The Ensemblux Pipeline:<ul>
+<li><a href="overview_pipeline/">Overview</a></li>
+<li><a href="installation/">Installation</a></li>
+<li><a href="Step0/">Step 1: Set up</a></li>
+<li><a href="Step1/">Step 2: FASTQ to expression matrix</a></li>
+<li><a href="Step2/">Step 3: Seurat object and ambient RNA</a></li>
+<li><a href="Step3/">Step 4: Quality control and filtering</a></li>
+</ul>
+</li>
+<li>Documentation:    <ul>
+<li><a href="config/">Job configurations</a></li>
+<li><a href="reference/">Execution parameters</a> </li>
+<li><a href="outputs/">Outputs</a> </li>
+</ul>
+</li>
+<li>Tutorial:<ul>
+<li><a href="midbrain_download/">Downloading data</a></li>
+<li><a href="Dataset1/">Enemblux with prior genotype information</a></li>
+<li><a href="pbmc_download/">Ensemblux without prior genotype information</a>              </li>
+</ul>
+</li>
+<li>About:<ul>
+<li><a href="LICENSE/">License</a></li>
+<li><a href="contributing/">Help and Feedback</a></li>
+<li><a href="Acknowledgement/">Acknowledgement</a></li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.5.2
+Build Date UTC : 2024-04-02 12:22:22.657696+00:00
+-->
