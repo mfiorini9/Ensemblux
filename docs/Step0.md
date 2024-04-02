@@ -1,4 +1,7 @@
-# Step 0: scRNAbox pipeline set up
+# Step 1: Setting up the Ensemblux pipeline
+
+In Step 1, .......
+
 Step 0 initiates the pipeline and sets up the working directory by depositing the required files.
  - - - -
 ## Running Step 0

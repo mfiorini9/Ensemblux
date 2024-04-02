@@ -58,7 +58,7 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Step 2: Preparation of input files</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#library-preparation">Library preparation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#demultiplexing-with-prior-genotype-information">Demultiplexing with prior genotype information</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#librarycsv">library.csv</a>
     </li>
@@ -66,7 +66,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#running-step-1">Running Step 1</a>
+    <li class="toctree-l2"><a class="reference internal" href="#demultiplexing-without-prior-genotype-information">Demultiplexing without prior genotype information</a>
     </li>
     </ul>
                   </li>
@@ -126,15 +126,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="step-1-fastq-to-gene-expression-matrix">Step 1: FASTQ to gene expression matrix</h1>
+                <h1 id="step-2-preparing-input-files-for-genetic-demultiplexing">Step 2: Preparing input files for genetic demultiplexing</h1>
+<p>In Step 2, .......</p>
 <ul>
-<li><a href="#library-preparation">Library preparation</a></li>
-<li><a href="#running-step-1">Running Step 1</a></li>
+<li><a href="#demultiplexing-with-prior-genotype-information">Demultiplexing with prior genotype information</a></li>
+<li><a href="#demultiplexing-without-prior-genotype-information">Demultiplexing without prior genotype information</a></li>
 </ul>
 <hr />
 <p>In Step 1, gene expression matrices are generated from FASTQ files using the CellRanger <em>counts</em> pipeline. Prior to running CellRanger, <code>library.csv</code> files must be prepared to define the FASTQ files for each sample. In addition, <code>feature_ref.csv</code> files must be prepared for the HTO track to define the HTOs used in the experiment. ScRNAbox provides an option for automating library preparation but the correct information must still be defined in the parameters. Alternatively, users may manually prepapre the libraries. For a tutorial on manual library preparation, please see the <a href="../library_prep/">tutorial</a>.<br /></p>
 <hr />
-<h2 id="library-preparation">Library preparation</h2>
+<h2 id="demultiplexing-with-prior-genotype-information">Demultiplexing with prior genotype information</h2>
 <h4 id="librarycsv">library.csv</h4>
 <p>The <code>library.csv</code> file defines the necessary information of the FASTQ files for the experiment, including the gene expression and antibody assays. The structure of the <code>library.csv</code> file should be: <br /></p>
 <pre><code>fastqs,sample,library_type
@@ -165,7 +166,7 @@ Hash4,B0254_TotalSeqB,R2,5PNNNNNNNNNN(BC),AGTAAGTTCAGCGTA,Antibody Capture
 </ul>
 <p>For more information regarding the preparation of the <code>feature_ref.csv</code>, please see CellRanger's <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis">documentation</a>.</p>
 <hr />
-<h2 id="running-step-1">Running Step 1</h2>
+<h2 id="demultiplexing-without-prior-genotype-information">Demultiplexing without prior genotype information</h2>
 <p>The following parameters are adjustable for Step 1 of the <strong>standard track</strong> (<code>~/working_directory/job_info/parameters/step1_par.txt</code>):</p>
 <table>
 <thead>

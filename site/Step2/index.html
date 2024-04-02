@@ -60,6 +60,10 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Step 3: Genetic demultiplexing by constituent tools</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#demultiplexing-with-prior-genotype-information">Demultiplexing with prior genotype information</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#demultiplexing-without-prior-genotype-information">Demultiplexing without prior genotype information</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Step3/">Step 4: Application of Ensemblux</a>
@@ -116,7 +120,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="step-2-create-seurat-object-and-remove-ambient-rna">Step 2: Create Seurat object and remove ambient RNA</h1>
+                <h1 id="step-3-genetic-demultiplexing-by-constituent-demultiplexing-tools">Step 3: Genetic demultiplexing by constituent demultiplexing tools</h1>
+<p>In Step 3, .......</p>
+<ul>
+<li><a href="#demultiplexing-with-prior-genotype-information">Demultiplexing with prior genotype information</a></li>
+<li><a href="#demultiplexing-without-prior-genotype-information">Demultiplexing without prior genotype information</a></li>
+</ul>
+<hr />
+<h2 id="demultiplexing-with-prior-genotype-information">Demultiplexing with prior genotype information</h2>
+<h2 id="demultiplexing-without-prior-genotype-information">Demultiplexing without prior genotype information</h2>
 <p>In Step 2, the CellRanger outputs generated in Step 1 (expression matrix, features, and barcodes) are used to create a Seurat object for each sample. The ambient RNA quantity is estimated and there is an option to correct gene expression profiles for RNA contamination using SoupX (<a href="https://academic.oup.com/gigascience/article/9/12/giaa151/6049831">Young et al. 2020</a>). Then, CellRanger (if not removing ambient RNA) or SoupX (if removing ambient RNA) feature-barcode expression matrices are transformed into Seurat objects. Quality control measures are then computed to inform filtering in Step 3, including:</p>
 <ul>
 <li>the number of unique transcripts (genes; nFeaturesRNA);</li>

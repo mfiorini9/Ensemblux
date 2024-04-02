@@ -1,4 +1,14 @@
-# Step 2: Create Seurat object and remove ambient RNA
+# Step 3: Genetic demultiplexing by constituent demultiplexing tools
+In Step 3, .......
+
+
+- [Demultiplexing with prior genotype information](#demultiplexing-with-prior-genotype-information)
+- [Demultiplexing without prior genotype information](#demultiplexing-without-prior-genotype-information)
+ - - - -
+
+## Demultiplexing with prior genotype information
+## Demultiplexing without prior genotype information
+
 In Step 2, the CellRanger outputs generated in Step 1 (expression matrix, features, and barcodes) are used to create a Seurat object for each sample. The ambient RNA quantity is estimated and there is an option to correct gene expression profiles for RNA contamination using SoupX ([Young et al. 2020](https://academic.oup.com/gigascience/article/9/12/giaa151/6049831)). Then, CellRanger (if not removing ambient RNA) or SoupX (if removing ambient RNA) feature-barcode expression matrices are transformed into Seurat objects. Quality control measures are then computed to inform filtering in Step 3, including:
 
 - the number of unique transcripts (genes; nFeaturesRNA);
